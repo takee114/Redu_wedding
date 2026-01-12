@@ -86,10 +86,9 @@ export default function ReduWeddingHome() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
         <div className="w-full px-6 py-6 md:px-14">
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center justify-center gap-16">
-            {/* Left Navigation */}
-            <div className="flex gap-8">
+          {/* Desktop Navigation (centered) */}
+          <div className="hidden md:flex items-center justify-center gap-12">
+            <div className="flex gap-8 items-center">
               <a
                 href="#home"
                 className="text-xs font-semibold uppercase text-gray-900 hover:text-[#D4958D] active:text-[#C17E75] transition-colors duration-200 focus:outline-none focus:text-[#D4958D] tracking-wide font-inter"
@@ -110,16 +109,13 @@ export default function ReduWeddingHome() {
               </a>
             </div>
 
-            {/* Centered Logo */}
-            <a href="/" className="flex items-center gap-2 group">
-              <div className="w-3 h-3 bg-[#D4958D] group-hover:bg-[#C17E75] group-active:bg-[#B06A61] transition-colors duration-200"></div>
+            <a href="/" className="flex items-center gap-2">
               <span className="text-xl font-extrabold text-gray-800 font-inter">
-                Redu<span className="text-[#D4958D]">.</span>
+                <img src="/logo.webp" alt="Redu" className="h-10 md:h-14 object-contain" />
               </span>
             </a>
 
-            {/* Right Navigation */}
-            <div className="flex gap-8">
+            <div className="flex gap-8 items-center">
               <a
                 href="#about"
                 className="text-xs font-semibold uppercase text-gray-900 hover:text-[#D4958D] active:text-[#C17E75] transition-colors duration-200 focus:outline-none focus:text-[#D4958D] tracking-wide font-inter"
@@ -146,9 +142,8 @@ export default function ReduWeddingHome() {
           {/* Mobile Navigation */}
           <div className="flex md:hidden items-center justify-between">
             <a href="/" className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-[#D4958D]"></div>
               <span className="text-lg font-extrabold text-gray-800 font-inter">
-                Redu<span className="text-[#D4958D]">.</span>
+                <img src="/logo.webp" alt="Redu" className="h-10 object-contain" />
               </span>
             </a>
 
@@ -220,13 +215,13 @@ export default function ReduWeddingHome() {
       </nav>
 
       {/* Hero Section */}
-      <section
+    <section
         id="home"
         className="relative flex flex-col min-h-screen pt-24 overflow-hidden"
       >
         <div className="flex-1 flex flex-col justify-center px-6 md:px-14 py-16">
           <h1 className="text-[12vw] md:text-8xl font-extrabold tracking-tight leading-none text-gray-800 font-inter">
-            Redu<span className="text-[#D4958D]">.</span>
+            Redu
           </h1>
           <p className="mt-6 text-lg md:text-2xl text-gray-600 tracking-wide font-inter max-w-2xl">
             Wedding Planning & Coordination
@@ -292,7 +287,7 @@ export default function ReduWeddingHome() {
               </li>
             </ul>
             <p className="text-sm font-semibold text-gray-800 font-inter">
-              Starting at $5,000
+              Starting at 750,000 ETB
             </p>
           </div>
 
@@ -327,7 +322,7 @@ export default function ReduWeddingHome() {
               </li>
             </ul>
             <p className="text-sm font-semibold text-gray-800 font-inter">
-              Starting at $3,000
+              Starting at 450,000 ETB
             </p>
           </div>
 
@@ -362,7 +357,7 @@ export default function ReduWeddingHome() {
               </li>
             </ul>
             <p className="text-sm font-semibold text-gray-800 font-inter">
-              Starting at $1,500
+              Starting at 225,000 ETB
             </p>
           </div>
         </div>
@@ -585,11 +580,11 @@ export default function ReduWeddingHome() {
                   className="w-full px-4 py-3 border border-gray-200 focus:border-[#D4958D] focus:outline-none transition-colors duration-200 font-inter"
                 >
                   <option value="">Select a range</option>
-                  <option value="under10k">Under $10,000</option>
-                  <option value="10k-25k">$10,000 - $25,000</option>
-                  <option value="25k-50k">$25,000 - $50,000</option>
-                  <option value="50k-100k">$50,000 - $100,000</option>
-                  <option value="over100k">Over $100,000</option>
+                  <option value="under10k">Under 1,500,000 ETB</option>
+                  <option value="10k-25k">1,500,000 ETB - 3,750,000 ETB</option>
+                  <option value="25k-50k">3,750,000 ETB - 7,500,000 ETB</option>
+                  <option value="50k-100k">7,500,000 ETB - 15,000,000 ETB</option>
+                  <option value="over100k">Over 15,000,000 ETB</option>
                 </select>
               </div>
 
